@@ -236,6 +236,7 @@
                             "TIER" when ply.Role is Scp079Role scp079role => scp079role.Level.ToString(),
                             "TIER" => "0",
                             "GROUP" => ply.GroupName,
+                            "ROTATION" => ply.Rotation.ToString(),
                             _ => ply.Nickname,
                         };
                     }).OrderBy(s => s);
